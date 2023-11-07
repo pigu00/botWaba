@@ -1,0 +1,208 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '5492494671799@s.whatsapp.net',
+    fromMe: false,
+    id: '75F383A74E4EE4807B055BCBF8A196D1',
+    participant: undefined
+  },
+  messageTimestamp: 1699356212,
+  pushName: 'Roberto Marbán',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Hola',
+  from: '5492494671799'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_960251ed-a0b1-431a-81bc-ea10e39bf276',
+  keyword: 'key_3078df27-c4b1-4a3f-8282-73a5af7ba791',
+  answer: '🙌 Hola bienvenido a este *Chatbot*',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'a94e2155a5ba37ff2abdabede9567a1c'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_2296de3b-4b18-44f0-907a-c312c827d796',
+  keyword: 'ans_960251ed-a0b1-431a-81bc-ea10e39bf276',
+  answer: 'Estas son las opciones disponibles\n' +
+    '👉 *consultar* para consultar donde votas\n' +
+    '👉 *denunciar*  para denunciar irregularidades en una escuela',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '2d775393a276ae6a6787248e5c2ee984'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5492494671799@s.whatsapp.net',
+    fromMe: false,
+    id: '05FC3F7900A9A8026A9FE9318209DBEB',
+    participant: undefined
+  },
+  messageTimestamp: 1699356217,
+  pushName: 'Roberto Marbán',
+  broadcast: false,
+  message: Message {
+    conversation: 'Consultar',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Consultar',
+  from: '5492494671799'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_862d2fcf-4918-4f49-a30e-9833f585b93f',
+  keyword: 'key_6e7f8527-7614-4baa-a7b2-a9c9222580d2',
+  answer: 'Envianos numero de documento, sexo y localidad',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'd05ad37c60304c776d15c13e8c94ec92'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_d16a2237-516c-4b55-97a9-13e96490f394',
+  keyword: 'ans_862d2fcf-4918-4f49-a30e-9833f585b93f',
+  answer: 'En instantes te enviamos donde votas',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '01500414280cd45860320061e939feee'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_28f5bbae-6bf1-4ab1-8daa-cb0df4b3e419',
+  keyword: 'ans_d16a2237-516c-4b55-97a9-13e96490f394',
+  answer: 'Gracias',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '76ba7ec08059bc8f5757ac0ff8bf38c4'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5492494671799@s.whatsapp.net',
+    fromMe: false,
+    id: 'DCFAB0204CF191D804C2F70AE69D302A',
+    participant: undefined
+  },
+  messageTimestamp: 1699356224,
+  pushName: 'Roberto Marbán',
+  broadcast: false,
+  message: Message {
+    conversation: 'Denunciar',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Denunciar',
+  from: '5492494671799'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_960251ed-a0b1-431a-81bc-ea10e39bf276',
+  keyword: 'key_3078df27-c4b1-4a3f-8282-73a5af7ba791',
+  answer: '🙌 Hola bienvenido a este *Chatbot*',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'a94e2155a5ba37ff2abdabede9567a1c'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_2296de3b-4b18-44f0-907a-c312c827d796',
+  keyword: 'ans_960251ed-a0b1-431a-81bc-ea10e39bf276',
+  answer: 'Estas son las opciones disponibles\n' +
+    '👉 *consultar* para consultar donde votas\n' +
+    '👉 *denunciar*  para denunciar irregularidades en una escuela',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '2d775393a276ae6a6787248e5c2ee984'
+}

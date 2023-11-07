@@ -48,18 +48,30 @@ const flowDiscord = addKeyword(['discord']).addAnswer(
     [flowSecundario]
 )
 
+const denunciar = addKeyword(['denunciar', 'denuncia'])
+    .addAnswer (['Ingresa en que localidad'])
+    .addAnswer (['si queres ver las localidades disponibles envia *opciones*'])
+    null,
+    [flowSecundario]
+
+const consultar = addKeyword(['consultar', 'consulta'])
+    .addAnswer(['Envianos numero de documento, sexo y localidad'])
+    .addAnswer(['En instantes te enviamos donde votas'])
+    .addAnswer(['Gracias'])
+
+
 const flowPrincipal = addKeyword(['hola', 'ole', 'alo'])
     .addAnswer('🙌 Hola bienvenido a este *Chatbot*')
     .addAnswer(
         [
-            'te comparto los siguientes links de interes sobre el proyecto',
-            '👉 *doc* para ver la documentación',
-            '👉 *gracias*  para ver la lista de videos',
-            '👉 *discord* unirte al discord',
+            'Estas son las opciones disponibles',
+            '👉 *consultar* para consultar donde votas',
+            '👉 *denunciar*  para denunciar irregularidades en una escuela',
+        
         ],
         null,
         null,
-        [flowDocs, flowGracias, flowTuto, flowDiscord]
+        [flowDocs, flowGracias, flowTuto, flowDiscord, denunciar, consultar]
     )
 
 const main = async () => {
