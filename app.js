@@ -3,61 +3,54 @@ const { createBot, createProvider, createFlow, addKeyword } = require('@bot-what
 const QRPortalWeb = require('@bot-whatsapp/portal')
 const BaileysProvider = require('@bot-whatsapp/provider/baileys')
 const MockAdapter = require('@bot-whatsapp/database/mock')
+const { Buttons } = require('whatsapp-web.js')
 
 const flowSecundario = addKeyword(['2', 'siguiente']).addAnswer(['📄 Aquí tenemos el flujo secundario'])
 
-const flowDocs = addKeyword(['doc', 'documentacion', 'documentación']).addAnswer(
-    [
-        '📄 Aquí encontras las documentación recuerda que puedes mejorarla',
-        'https://bot-whatsapp.netlify.app/',
-        '\n*2* Para siguiente paso.',
-    ],
-    null,
-    null,
-    [flowSecundario]
-)
+const flowCierreConsulta = addKeyword(['Masculino', 'Femenino', 'No binario']).addAnswer(['Gracias, ya te decimos tu lugar de votacion.', 'Aguardanos un instante'])
 
-const flowTuto = addKeyword(['tutorial', 'tuto']).addAnswer(
-    [
-        '🙌 Aquí encontras un ejemplo rapido',
-        'https://bot-whatsapp.netlify.app/docs/example/',
-        '\n*2* Para siguiente paso.',
-    ],
-    null,
-    null,
-    [flowSecundario]
-)
+const flowSexo = addKeyword(['']).addAnswer('Por favor, indicá tu género según figura en tu DNI. *Masculino*, *Femenino*, *No Binario*:', {capture:true},(ctx, {fallBack}) => {
+    if (ctx.body != "Masculino"){
 
-const flowGracias = addKeyword(['gracias', 'grac']).addAnswer(
-    [
-        '🚀 Puedes aportar tu granito de arena a este proyecto',
-        '[*opencollective*] https://opencollective.com/bot-whatsapp',
-        '[*buymeacoffee*] https://www.buymeacoffee.com/leifermendez',
-        '[*patreon*] https://www.patreon.com/leifermendez',
-        '\n*2* Para siguiente paso.',
-    ],
-    null,
-    null,
-    [flowSecundario]
-)
+        return  fallBack()
+    } 
+},
 
-const flowDiscord = addKeyword(['discord']).addAnswer(
-    ['🤪 Únete al discord', 'https://link.codigoencasa.com/DISCORD', '\n*2* Para siguiente paso.'],
-    null,
-    null,
-    [flowSecundario]
-)
-
-const denunciar = addKeyword(['denunciar', 'denuncia'])
-    .addAnswer (['Ingresa en que localidad'])
-    .addAnswer (['si queres ver las localidades disponibles envia *opciones*'])
-    null,
-    [flowSecundario]
+[flowCierreConsulta])
 
 const consultar = addKeyword(['consultar', 'consulta'])
-    .addAnswer(['Envianos numero de documento, sexo y localidad'])
-    .addAnswer(['En instantes te enviamos donde votas'])
-    .addAnswer(['Gracias'])
+.addAnswer(['Para conocer tu lugar de votación 🗳️, por favor, escribí tu número de DNI sin puntos, comas ni espacios.'
+],
+null,
+null,
+[flowSexo]
+)
+
+
+
+
+
+
+const flowCiudades = addKeyword(['3', 'localidades', 'ciudades']).addAnswer(['San Justo', 
+'Ramos Mejía',
+'Aldo Bonzi'
+])    
+    
+const flowGracias = addKeyword(['gracias', 'grac']).addAnswer(
+    ['Gracias por usar nuestro bot' ],
+    null,
+    null,
+    [flowSecundario]
+)
+
+
+
+const denunciar = addKeyword(['denunciar', 'denuncia']).addAnswer (
+    ['Ingresa en que localidad', 'si queres ver las localidades disponibles envia *localidades*'],
+    null,
+    null,
+    [flowCiudades]
+    )
 
 
 const flowPrincipal = addKeyword(['hola', 'ole', 'alo'])
@@ -71,12 +64,12 @@ const flowPrincipal = addKeyword(['hola', 'ole', 'alo'])
         ],
         null,
         null,
-        [flowDocs, flowGracias, flowTuto, flowDiscord, denunciar, consultar]
+        [flowGracias, denunciar, consultar, flowCiudades,flowSexo,flowCierreConsulta]
     )
 
 const main = async () => {
     const adapterDB = new MockAdapter()
-    const adapterFlow = createFlow([flowPrincipal])
+    const adapterFlow = createFlow([flowPrincipal,consultar, denunciar])
     const adapterProvider = createProvider(BaileysProvider)
 
     createBot({

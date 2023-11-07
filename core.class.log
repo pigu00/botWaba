@@ -2,26 +2,26 @@
   key: {
     remoteJid: '5492494671799@s.whatsapp.net',
     fromMe: false,
-    id: '75F383A74E4EE4807B055BCBF8A196D1',
+    id: '3EB0D8A27188C90A2897B8',
     participant: undefined
   },
-  messageTimestamp: 1699356212,
+  messageTimestamp: 1699400076,
   pushName: 'Roberto Marbán',
   broadcast: false,
   message: Message {
-    conversation: 'Hola',
+    conversation: 'consultar',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'Hola',
+  body: 'consultar',
   from: '5492494671799'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_960251ed-a0b1-431a-81bc-ea10e39bf276',
-  keyword: 'key_3078df27-c4b1-4a3f-8282-73a5af7ba791',
-  answer: '🙌 Hola bienvenido a este *Chatbot*',
+  ref: 'ans_8b47e3f4-2cc9-43fe-87cd-803fa9bc7fef',
+  keyword: 'key_0224d300-ddbf-4102-ae50-0b8f6d6e328e',
+  answer: 'Para conocer tu lugar de votación 🗳️, por favor, escribí tu número de DNI sin puntos, comas ni espacios.',
   options: {
     media: null,
     buttons: [],
@@ -30,139 +30,94 @@
     delay: 0,
     idle: null,
     ref: null,
-    nested: [],
+    nested: [ [Object], [Object] ],
     keyword: {},
     callback: false
   },
-  refSerialize: 'a94e2155a5ba37ff2abdabede9567a1c'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_2296de3b-4b18-44f0-907a-c312c827d796',
-  keyword: 'ans_960251ed-a0b1-431a-81bc-ea10e39bf276',
-  answer: 'Estas son las opciones disponibles\n' +
-    '👉 *consultar* para consultar donde votas\n' +
-    '👉 *denunciar*  para denunciar irregularidades en una escuela',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [
-      [Object], [Object],
-      [Object], [Object],
-      [Object], [Object],
-      [Object], [Object],
-      [Object], [Object],
-      [Object], [Object],
-      [Object], [Object],
-      [Object]
-    ],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '2d775393a276ae6a6787248e5c2ee984'
+  refSerialize: 'df9f8be07cba9ed55f9dde23d0b70ca1'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5492494671799@s.whatsapp.net',
     fromMe: false,
-    id: '05FC3F7900A9A8026A9FE9318209DBEB',
+    id: '3EB015E43CE412E8A0ED4E',
     participant: undefined
   },
-  messageTimestamp: 1699356217,
+  messageTimestamp: 1699400079,
   pushName: 'Roberto Marbán',
   broadcast: false,
   message: Message {
-    conversation: 'Consultar',
+    conversation: '54739022433',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'Consultar',
+  body: '54739022433',
   from: '5492494671799'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_862d2fcf-4918-4f49-a30e-9833f585b93f',
-  keyword: 'key_6e7f8527-7614-4baa-a7b2-a9c9222580d2',
-  answer: 'Envianos numero de documento, sexo y localidad',
+  ref: 'ans_de436d93-3b2e-4def-81b2-5b7bff8a6663',
+  keyword: 'key_f613454f-1971-4117-b149-ad0b6493b422',
+  answer: 'Por favor, indicá tu género según figura en tu DNI. *Masculino*, *Femenino*, *No Binario*:',
   options: {
     media: null,
     buttons: [],
-    capture: false,
+    capture: true,
     child: null,
     delay: 0,
     idle: null,
     ref: null,
-    nested: [],
+    nested: [ [Object], [Object] ],
     keyword: {},
-    callback: false
+    callback: true
   },
-  refSerialize: 'd05ad37c60304c776d15c13e8c94ec92'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_d16a2237-516c-4b55-97a9-13e96490f394',
-  keyword: 'ans_862d2fcf-4918-4f49-a30e-9833f585b93f',
-  answer: 'En instantes te enviamos donde votas',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '01500414280cd45860320061e939feee'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_28f5bbae-6bf1-4ab1-8daa-cb0df4b3e419',
-  keyword: 'ans_d16a2237-516c-4b55-97a9-13e96490f394',
-  answer: 'Gracias',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '76ba7ec08059bc8f5757ac0ff8bf38c4'
+  refSerialize: 'c470a54e0ceb0dbcb6a64b191072ecc3'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5492494671799@s.whatsapp.net',
     fromMe: false,
-    id: 'DCFAB0204CF191D804C2F70AE69D302A',
+    id: '3EB01670E6DB952E0ACE70',
     participant: undefined
   },
-  messageTimestamp: 1699356224,
+  messageTimestamp: 1699400090,
   pushName: 'Roberto Marbán',
   broadcast: false,
   message: Message {
-    conversation: 'Denunciar',
+    conversation: 'femenee',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'Denunciar',
+  body: 'femenee',
+  from: '5492494671799'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5492494671799@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB040CA72231916178C64',
+    participant: undefined
+  },
+  messageTimestamp: 1699400098,
+  pushName: 'Roberto Marbán',
+  broadcast: false,
+  message: Message {
+    conversation: 'no binario',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'no binario',
   from: '5492494671799'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_960251ed-a0b1-431a-81bc-ea10e39bf276',
-  keyword: 'key_3078df27-c4b1-4a3f-8282-73a5af7ba791',
-  answer: '🙌 Hola bienvenido a este *Chatbot*',
+  ref: 'ans_212c688c-b1a1-4df6-907c-29b551284404',
+  keyword: 'key_37c34d21-8677-45b7-8ecc-8ca7233cbff4',
+  answer: 'Gracias, ya te decimos tu lugar de votacion.\nAguardanos un instante',
   options: {
     media: null,
     buttons: [],
@@ -175,34 +130,5 @@
     keyword: {},
     callback: false
   },
-  refSerialize: 'a94e2155a5ba37ff2abdabede9567a1c'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_2296de3b-4b18-44f0-907a-c312c827d796',
-  keyword: 'ans_960251ed-a0b1-431a-81bc-ea10e39bf276',
-  answer: 'Estas son las opciones disponibles\n' +
-    '👉 *consultar* para consultar donde votas\n' +
-    '👉 *denunciar*  para denunciar irregularidades en una escuela',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [
-      [Object], [Object],
-      [Object], [Object],
-      [Object], [Object],
-      [Object], [Object],
-      [Object], [Object],
-      [Object], [Object],
-      [Object], [Object],
-      [Object]
-    ],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '2d775393a276ae6a6787248e5c2ee984'
+  refSerialize: '3c8cffef5bbdd1f0a10457d3c4d7cf88'
 }
