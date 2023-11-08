@@ -3,9 +3,8 @@ const { createBot, createProvider, createFlow, addKeyword } = require('@bot-what
 const QRPortalWeb = require('@bot-whatsapp/portal')
 const BaileysProvider = require('@bot-whatsapp/provider/baileys')
 const MockAdapter = require('@bot-whatsapp/database/mock')
-const { Buttons } = require('whatsapp-web.js')
+const { buttons } = require('whatsapp-web.js')
 
-const flowSecundario = addKeyword(['2', 'siguiente']).addAnswer(['📄 Aquí tenemos el flujo secundario'])
 
 const flowCierreConsulta = addKeyword(['Masculino', 'Femenino', 'No binario']).addAnswer(['Gracias, ya te decimos tu lugar de votacion.', 'Aguardanos un instante'])
 
@@ -15,7 +14,6 @@ const flowSexo = addKeyword(['']).addAnswer('Por favor, indicá tu género segú
         return  fallBack()
     } 
 },
-
 [flowCierreConsulta])
 
 const consultar = addKeyword(['consultar', 'consulta'])
@@ -26,30 +24,45 @@ null,
 [flowSexo]
 )
 
-
-
-
-
-
-const flowCiudades = addKeyword(['3', 'localidades', 'ciudades']).addAnswer(['San Justo', 
-'Ramos Mejía',
-'Aldo Bonzi'
-])    
+ 
     
-const flowGracias = addKeyword(['gracias', 'grac']).addAnswer(
-    ['Gracias por usar nuestro bot' ],
-    null,
-    null,
-    [flowSecundario]
+//const flowGracias = addKeyword(['gracias', 'grac']).addAnswer(
+//    ['Gracias por usar nuestro bot' ],
+//    null,
+//    null,
+//    [flowSecundario]
+//)
+
+
+const flowCierreDenuncia = addKeyword(['']).addAnswer(['Muchas Gracias 🙌, en instantes nos comunicamos con vos']
+
+)
+
+const flowEscuela = addKeyword(['']).addAnswer(['👉 Ingresa escuela donde viste irregularidades'],
+null,
+null,
+[flowCierreDenuncia]
 )
 
 
+const flowDNIDenuncia = addKeyword(['']).addAnswer(['👉 Ingresa tu DNI'],
+null,
+null,
+[flowEscuela]
+)
+
+const flowNombre = addKeyword(['']).addAnswer(['👉 Ingresa tu nombre completo'],
+null,
+null,
+[flowDNIDenuncia]
+)
+
 
 const denunciar = addKeyword(['denunciar', 'denuncia']).addAnswer (
-    ['Ingresa en que localidad', 'si queres ver las localidades disponibles envia *localidades*'],
+    ['Ingresa tu nombre completo', 'si queres ver las localidades disponibles envia *localidades*'],
     null,
     null,
-    [flowCiudades]
+    [flowNombre]
     )
 
 
@@ -64,7 +77,7 @@ const flowPrincipal = addKeyword(['hola', 'ole', 'alo'])
         ],
         null,
         null,
-        [flowGracias, denunciar, consultar, flowCiudades,flowSexo,flowCierreConsulta]
+        [denunciar, consultar, flowSexo,flowCierreConsulta,flowCierreDenuncia,flowNombre,flowDNIDenuncia,flowEscuela]
     )
 
 const main = async () => {
