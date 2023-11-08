@@ -2,14 +2,88 @@
   key: {
     remoteJid: '5492494671799@s.whatsapp.net',
     fromMe: false,
-    id: '3EB0D8A27188C90A2897B8',
+    id: '3EB0C71C197ACA65345980',
     participant: undefined
   },
-  messageTimestamp: 1699400076,
+  messageTimestamp: 1699441283,
   pushName: 'Roberto Marbán',
   broadcast: false,
   message: Message {
-    conversation: 'consultar',
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'hola',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'hola',
+  from: '5492494671799'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_36f6fcf0-b575-424c-8954-fd10f5a8ca13',
+  keyword: 'key_7812f263-e039-4fa0-bddd-ac6d4d2da57d',
+  answer: '🙌 Hola bienvenido a *Guardianes de tu voto*',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'ed7a7108d3e4a9838e18b2aeb484e734'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_8a9143c2-95af-459f-a2b0-42b970b3bb3b',
+  keyword: 'ans_36f6fcf0-b575-424c-8954-fd10f5a8ca13',
+  answer: 'Estas son las opciones disponibles\n' +
+    '👉 *consultar* para consultar donde votas\n' +
+    '👉 *denunciar*  para denunciar irregularidades en una escuela',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '3475e25749339f208c80c3140839a0c3'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5492494671799@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0210613CFABCD00CE58',
+    participant: undefined
+  },
+  messageTimestamp: 1699441291,
+  pushName: 'Roberto Marbán',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'consultar',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
@@ -19,8 +93,8 @@
   from: '5492494671799'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_8b47e3f4-2cc9-43fe-87cd-803fa9bc7fef',
-  keyword: 'key_0224d300-ddbf-4102-ae50-0b8f6d6e328e',
+  ref: 'ans_1133b0c6-2f0a-4471-a56e-bbb713a6630e',
+  keyword: 'key_1421df01-47cb-4ac0-9b31-58ca0ddfd9d7',
   answer: 'Para conocer tu lugar de votación 🗳️, por favor, escribí tu número de DNI sin puntos, comas ni espacios.',
   options: {
     media: null,
@@ -34,31 +108,35 @@
     keyword: {},
     callback: false
   },
-  refSerialize: 'df9f8be07cba9ed55f9dde23d0b70ca1'
+  refSerialize: '25adaf40b2b8d326939774fbc8a8552c'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5492494671799@s.whatsapp.net',
     fromMe: false,
-    id: '3EB015E43CE412E8A0ED4E',
+    id: '3EB08DEECF87D897BD9090',
     participant: undefined
   },
-  messageTimestamp: 1699400079,
+  messageTimestamp: 1699441295,
   pushName: 'Roberto Marbán',
   broadcast: false,
   message: Message {
-    conversation: '54739022433',
+    extendedTextMessage: ExtendedTextMessage {
+      text: '125',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: '54739022433',
+  body: '125',
   from: '5492494671799'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_de436d93-3b2e-4def-81b2-5b7bff8a6663',
-  keyword: 'key_f613454f-1971-4117-b149-ad0b6493b422',
+  ref: 'ans_4add7986-e450-4aea-b5c0-f7494d4712b1',
+  keyword: 'key_e863f7e7-bb65-4a62-8421-6f281dadf316',
   answer: 'Por favor, indicá tu género según figura en tu DNI. *Masculino*, *Femenino*, *No Binario*:',
   options: {
     media: null,
@@ -72,51 +150,35 @@
     keyword: {},
     callback: true
   },
-  refSerialize: 'c470a54e0ceb0dbcb6a64b191072ecc3'
+  refSerialize: '1ea4ca9ab94050ab966a9a4a08787b2c'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5492494671799@s.whatsapp.net',
     fromMe: false,
-    id: '3EB01670E6DB952E0ACE70',
+    id: '3EB040CBABA6154DE35FAF',
     participant: undefined
   },
-  messageTimestamp: 1699400090,
+  messageTimestamp: 1699441300,
   pushName: 'Roberto Marbán',
   broadcast: false,
   message: Message {
-    conversation: 'femenee',
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'masculino',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'femenee',
-  from: '5492494671799'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5492494671799@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB040CA72231916178C64',
-    participant: undefined
-  },
-  messageTimestamp: 1699400098,
-  pushName: 'Roberto Marbán',
-  broadcast: false,
-  message: Message {
-    conversation: 'no binario',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'no binario',
+  body: 'masculino',
   from: '5492494671799'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_212c688c-b1a1-4df6-907c-29b551284404',
-  keyword: 'key_37c34d21-8677-45b7-8ecc-8ca7233cbff4',
+  ref: 'ans_18a45199-7f20-49ba-9ca8-250def48ee93',
+  keyword: 'key_c3d95d2d-0ba9-4126-baed-620cde6c3f99',
   answer: 'Gracias, ya te decimos tu lugar de votacion.\nAguardanos un instante',
   options: {
     media: null,
@@ -130,5 +192,173 @@
     keyword: {},
     callback: false
   },
-  refSerialize: '3c8cffef5bbdd1f0a10457d3c4d7cf88'
+  refSerialize: '25857c80eed724f0c36b30a1205c4ebe'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5492494671799@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0A08F6CC9ECF677AD65',
+    participant: undefined
+  },
+  messageTimestamp: 1699441308,
+  pushName: 'Roberto Marbán',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'denunciar',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'denunciar',
+  from: '5492494671799'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_3dccf4a8-6a49-4930-bf9c-a70adea048e4',
+  keyword: 'key_17a323ce-e074-48fe-aafb-cba518742292',
+  answer: '👉 Ingresa tu *nombre completo*',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [ [Object], [Object] ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'fd331f9d1af737de2835d59042927a3a'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5492494671799@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB04C8E484DE541356364',
+    participant: undefined
+  },
+  messageTimestamp: 1699441311,
+  pushName: 'Roberto Marbán',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'fdksfspf',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'fdksfspf',
+  from: '5492494671799'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_77094769-82e7-465c-ae71-1b129c3f2a96',
+  keyword: 'key_665ec36c-4af4-4041-891e-5e87cc41acfd',
+  answer: '👉 Ingresa tu *DNI*',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [ [Object], [Object] ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'dc33c4cd8a7b98ad7ebaf4ff8563c467'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5492494671799@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0AA423B98AB538BAAF5',
+    participant: undefined
+  },
+  messageTimestamp: 1699441314,
+  pushName: 'Roberto Marbán',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: '12684654',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '12684654',
+  from: '5492494671799'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_e3554824-00ec-48af-97eb-ee66814b4c2a',
+  keyword: 'key_2efdd0d3-6258-43eb-9814-1744ade46527',
+  answer: '👉 Ingresa escuela donde viste irregularidades',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [ [Object], [Object] ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '922a429b43a6122a9c9724a047f72300'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5492494671799@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0CCC3A75B7C5A34F628',
+    participant: undefined
+  },
+  messageTimestamp: 1699441320,
+  pushName: 'Roberto Marbán',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'escuela de tu tia',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'escuela de tu tia',
+  from: '5492494671799'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_822ed09b-84b1-448f-a9ce-3a7f497ba372',
+  keyword: 'key_362e42a5-3656-4c2e-b5d8-52eee7e034d2',
+  answer: '*Muchas Gracias* 🙌, en instantes nos comunicamos con vos',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '279ba02a2eac43f887497287b1a3e8b4'
 }

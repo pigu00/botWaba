@@ -34,7 +34,7 @@ null,
 //)
 
 
-const flowCierreDenuncia = addKeyword(['']).addAnswer(['Muchas Gracias 🙌, en instantes nos comunicamos con vos']
+const flowCierreDenuncia = addKeyword(['']).addAnswer(['*Muchas Gracias* 🙌, en instantes nos comunicamos con vos']
 
 )
 
@@ -45,29 +45,29 @@ null,
 )
 
 
-const flowDNIDenuncia = addKeyword(['']).addAnswer(['👉 Ingresa tu DNI'],
+const flowDNIDenuncia = addKeyword(['']).addAnswer(['👉 Ingresa tu *DNI*'],
 null,
 null,
 [flowEscuela]
 )
 
-const flowNombre = addKeyword(['']).addAnswer(['👉 Ingresa tu nombre completo'],
-null,
-null,
-[flowDNIDenuncia]
-)
+// const flowNombre = addKeyword(['']).addAnswer(['👉 Ingresa tu nombre completo'],
+// null,
+// null,
+// [flowDNIDenuncia]
+// )
 
 
 const denunciar = addKeyword(['denunciar', 'denuncia']).addAnswer (
-    ['Ingresa tu nombre completo', 'si queres ver las localidades disponibles envia *localidades*'],
+    ['👉 Ingresa tu *nombre completo*'],
     null,
     null,
-    [flowNombre]
+    [flowDNIDenuncia]
     )
 
 
 const flowPrincipal = addKeyword(['hola', 'ole', 'alo'])
-    .addAnswer('🙌 Hola bienvenido a este *Chatbot*')
+    .addAnswer('🙌 Hola bienvenido a *Guardianes de tu voto*')
     .addAnswer(
         [
             'Estas son las opciones disponibles',
@@ -77,7 +77,7 @@ const flowPrincipal = addKeyword(['hola', 'ole', 'alo'])
         ],
         null,
         null,
-        [denunciar, consultar, flowSexo,flowCierreConsulta,flowCierreDenuncia,flowNombre,flowDNIDenuncia,flowEscuela]
+        [denunciar, consultar, flowSexo,flowCierreConsulta,flowCierreDenuncia,flowDNIDenuncia,flowEscuela]
     )
 
 const main = async () => {
